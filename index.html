@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        Ninja Music player
+    </title>
+
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- this is the main stylesheet -->
+
+    <!-- this style sheet with all the media queries -->
+    <link rel="stylesheet" type="text/css" href="css/Indexpageresponsive.css" />
+    
+
+    <!-- this script tag for font awesome icons -->
+    <script src="https://kit.fontawesome.com/d8c518316b.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- body -->
+
+<body>
+    <!-- top navigation bar -->
+    <nav class="nav-bar">
+        <!--Div contains the logo and title of the page-->
+        <div class="title">
+            <div class="logo">
+                <img src="https://i.imgur.com/Esbp248.png" alt="Ninja Studios" />
+            </div>
+        </div>
+
+        <!-- animated favourites text -->
+        <div class="favs">
+            <p>Favourites</p>
+        </div>
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <div>
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search" />
+
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+
+        <!-- notification bell -->
+        <div class="notification-bell" style="position: relative;">
+            <i class="fas fa-bell fa-2x"></i>
+            <span
+          style="
+            background-color: red;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            padding: 2px;
+            position: absolute;
+            right: 14px;
+          "
+        >
+        </span>
+        </div>
+
+        <!-- profile picture -->
+        <div class="profile-pic">
+            <img src="Images/profile pic.jpg" alt="Profile Image" />
+        </div>
+    </nav>
+
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    <!-- I have separated these sections using the aside tag for each section -->
+
+    <main>
+        <!-- aside section 1 -->
+
+        <aside class="aside section-1">
+            <!-- this is for the carousel -->
+
+            <div class="outer-carousel">
+                <div class="carousel">
+                    <!-- these are the 3 images in the carousel -->
+
+                    <img
+              src="https://www.musicgrotto.com/wp-content/uploads/2023/01/edm-electronic-dance-music-graphic-art.jpg"
+            />
+
+                    <img
+              src="https://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/Mood-Boosters-300x180.png"
+               />
+
+                    <img
+              src="https://i.ytimg.com/vi/QGkDsOwtCZ8/maxresdefault.jpg"
+               />
+                </div>
+            </div>
+
+            <!-- this is the latest release section -->
+
+            <div class="latest-release">
+                <h1 style="margin-bottom: 8px;">
+                    Latest Release
+                </h1>
+
+                <!-- latest release section content below-->
+                <!-- it will contain the "cards" -->
+                <div class="latest-release-content">
+                    <!-- title card 1-->
+                    <div class="card">
+                        <div>
+                            <!-- image of the card -->
+                            <img
+                  src="https://m.media-amazon.com/images/I/61BxpmUtuYL._UF1000,1000_QL80_.jpg"
+                  alt="Onism"
+                />
+
+                            <!-- play button, which will be appear on hover on the card image -->
+                            <div class="play-button">
+                                <i class="fas fa-play" style="width:45%; height:45%; display:inline-block"></i>
+                            </div>
+                        </div>
+
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Onism
+                            </h3>
+                            <p>
+                                AUG 11, 2017
+                            </p>
+                        </div>
+
+                        <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+                        <div class="options">
+                            <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i>
+                </label>
+
+                            <input type="checkbox" id="latest-release-checkbox" />
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p>
+                                        <i class="fas fa-play"></i>
+                                        <a href="SinglePlaylistScreen.html">
+                                            Play Now
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                      <i class="fa-solid fa-plus"></i>
+                                        Add to Queue
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                      <i class="fa-solid fa-bars"></i>
+                                        Add to Favourites
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                      <i class="fa-solid fa-circle-info"></i>
+                                        Get Info
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- title card 2-->
+                    <div class="card">
+                        <div>
+                            <!-- image of the card -->
+                            <img
+                  src="https://m.media-amazon.com/images/I/61BxpmUtuYL._UF1000,1000_QL80_.jpg"
+                  alt="Onism"
+                />
+
+                            <!-- play button, which will be appear on hover on the card image -->
+                            <div class="play-button">
+                                <i
+                    class="fas fa-play"
+                    style="width: 45%; height: 45%; display: inline-block;"
+                  ></i>
+                            </div>
+                        </div>
+
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Onism
+                            </h3>
+                            <p>
+                                AUG 11, 2017
+                            </p>
+                        </div>
+
+                        <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+                        <div class="options">
+                            <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i>
+                </label>
+
+                            <input type="checkbox" id="latest-release-checkbox" />
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p>
+                                        <i class="fas fa-play"></i>
+                                        <a href="SinglePlaylistScreen.html">
+                                            Play Now
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-list-ul"></i>
+                                        Add to Queue
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-music"></i>
+                                        Add to playlist
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-info-circle"></i>
+                                        Get Info
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- title card 3 -->
+                    <div class="card">
+                        <div>
+                            <!-- image of the card -->
+                            <img
+                  src="https://m.media-amazon.com/images/I/61BxpmUtuYL._UF1000,1000_QL80_.jpg"
+                  alt="Onism"
+                />
+
+                            <!-- play button, which will be appear on hover on the card image -->
+                            <div class="play-button">
+                                <i
+                    class="fas fa-play"
+                    style="width: 45%; height: 45%; display: inline-block;"
+                  ></i>
+                            </div>
+                        </div>
+
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Onism
+                            </h3>
+                            <p>
+                                AUG 11, 2017
+                            </p>
+                        </div>
+
+                        <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+                        <div class="options">
+                            <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i>
+                </label>
+
+                            <input type="checkbox" id="latest-release-checkbox" />
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p>
+                                        <i class="fas fa-play"></i>
+                                        <a href="SinglePlaylistScreen.html">
+                                            Play Now
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-list-ul"></i>
+                                        Add to Queue
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-music"></i>
+                                        Add to playlist
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-info-circle"></i>
+                                        Get Info
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- title card 4 -->
+                    <div class="card">
+                        <div>
+                            <!-- image of the card -->
+                            <img
+                  src="https://m.media-amazon.com/images/I/61BxpmUtuYL._UF1000,1000_QL80_.jpg"
+                  alt="Onism"
+                />
+
+                            <!-- play button, which will be appear on hover on the card image -->
+                            <div class="play-button">
+                                <i
+                    class="fas fa-play"
+                    style="width: 45%; height: 45%; display: inline-block;"
+                  ></i>
+                            </div>
+                        </div>
+
+                        <!-- it will contain the name and date of release of the song -->
+                        <div class="song-description">
+                            <h3>
+                                Onism
+                            </h3>
+                            <p>
+                                AUG 11, 2017
+                            </p>
+                        </div>
+
+                        <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+                        <div class="options">
+                            <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i>
+                </label>
+
+                            <input type="checkbox" id="latest-release-checkbox" />
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p>
+                                        <i class="fas fa-play"></i>
+                                        <a href="SinglePlaylistScreen.html">
+                                            Play Now
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-list-ul"></i>
+                                        Add to Queue
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-music"></i>
+                                        Add to playlist
+                                    </p>
+                                </div>
+
+                                <hr />
+
+                                <div class="drop-item">
+                                    <p>
+                                        <i class="fas fa-info-circle"></i>
+                                        Get Info
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- popular artists section -->
+            <div class="popular-artists">
+                <!-- Heading of popular artists section -->
+                <h1 style="margin-bottom: 12px;">
+                    Popular Artists
+                </h1>
+
+                <!-- popular artists content section -->
+                <div class="popular-artist-content">
+                    <!-- if user clicks on any one artist, it will redirect the user to the second page -->
+                    <!-- following is the list of artists -->
+
+                    <!-- first artist -->
+                    <a href="SinglePlaylistScreen.html">
+                        <div>
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/1200px-Ed_Sheeran-6886_%28cropped%29.jpg"
+                  alt="Ed Sheeran"
+                />
+
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <p>
+                                Ed Sheeran
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- second artist -->
+                    <a href="SinglePlaylistScreen.html">
+                        <div>
+                            <img
+                  src="https://i1.sndcdn.com/avatars-000237271265-7hhnty-t500x500.jpg"
+                  alt="ColdPlay"
+                />
+
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <p>
+                                ColdPlay
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- third artist -->
+                    <a href="SinglePlaylistScreen.html">
+                        <div>
+                            <img
+                  src="https://assets.mycast.io/actor_images/actor-zayn-malik-712070_large.jpg?1679228104"
+                  alt="Zayn"
+                />
+
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <p>
+                                Zayn
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- fourth artist -->
+                    <a href="SinglePlaylistScreen.html">
+                        <div>
+                            <img
+                  src="https://media.timeout.com/images/105248059/750/422/image.jpg"
+                  alt="Charlie Puth"
+                />
+
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <p>
+                                Charlie Puth
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- fifth artist -->
+                    <a href="SinglePlaylistScreen.html">
+                        <div>
+                            <img
+                  src="https://rockcelebrities.net/wp-content/uploads/2021/09/Imagine-Dragons-All-Members.jpg"
+                  alt="Imagine Dragon"
+                />
+
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <p>
+                                Imagine Dragon
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Sixth artist -->
+                    <a href="SinglePlaylistScreen.html">
+                        <div>
+                            <img
+                  src="https://wallpaperaccess.com/full/54147.jpg"
+                  alt="Bruno Mars"
+                />
+
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+
+                            <p>
+                                Bruno Mars
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Music Themes part with the tri-gradient background -->
+
+            <div class="music-themes">
+                <!-- this div will be the logo of music themes, see the output, the one with 3 squares/rects  -->
+                <!-- the logo with orange, green and yellow color -->
+                <div class="stations">
+                    <div id="div1">
+                        <div id="div2">
+                            <div id="div3">
+                                <img src="https://static.vecteezy.com/system/resources/previews/009/255/160/non_2x/ninja-music-minimalist-logo-simple-negative-space-design-isolated-with-soft-background-vector.jpg" alt="Stations" /> 
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- this is the content part of them themes -->
+                <!-- the one which changes colors on hover -->
+                <div class="theme-main">
+                    <div class="theme-content">
+                        <img src="https://image.lexica.art/full_jpg/94136ebb-5a7d-4d91-9350-9b8723258180" alt="Love" />
+                        <p>Love</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="https://img.freepik.com/premium-vector/boombox-tape-recorder-illustration-vector-stock-bass_374562-10.jpg?w=360" alt="Retro" />
+                        <p>Retro</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="https://e1.pxfuel.com/desktop-wallpaper/22/826/desktop-wallpaper-aesthetics-vibes-playlist-cover-playlist-covers.jpg" alt="Chill" />
+                        <p>Chill</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="https://images.8tracks.com/cover/i/002/385/523/dm1-9088.jpg?rect=222,211,1043,1043&q=98&fm=jpg&fit=max&w=1024&h=1024" alt="Rock" />
+                        <p>Rock</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="https://mixmag.net/assets/uploads/images/_columns2/Stokes-Weightlifting-Goals-728x375-1460579659.jpg" alt="Workout" />
+                        <p>Workout</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2022/03/spotify-playlist-cover-woman-listeningt-to-headphones-purple-music-032322.jpg" alt="Pop" />
+                        <p>Pop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd Theme part -->
+
+            <div class="music-themes-2">
+                <!-- 3 divs content -->
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <span>
+                Party
+              </span>
+                    </div>
+                </div>
+
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <span>
+                Electronic
+              </span>
+                    </div>
+                </div>
+
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <span>
+                Road Trip
+              </span>
+                    </div>
+                </div>
+            </div>
+            <!-- div over -->
+
+            <!-- language section of the page -->
+            <!-- "class is same for hindi and english sections" -->
+            <!-- in this way redundancy is handled. considering the re-usability of the code -->
+
+            <div class="language english">
+                <!-- latest english section -->
+                <h1 class="language-heading">
+                    Latest English
+                </h1>
+
+                <!-- contents of latest english -->
+                <div class="language-content">
+                    <!-- 1st -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/e/e4/Skin_The_Remixes_by_Flume.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                            AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div>
+                        <img
+                src="https://cdns-images.dzcdn.net/images/cover/14446efffc27e2575b914c88cdbb35e5/264x264.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div>
+                        <img
+                src="https://c.saavncdn.com/118/Worry-Bout-Us-English-2015-500x500.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 4th -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 5th -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/e/e4/Skin_The_Remixes_by_Flume.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 6th -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- this is the hindi section -->
+
+            <div class="language hindi">
+                <!-- hindi section heading -->
+                <h1 class="language-heading">
+                    Latest Hindi
+                </h1>
+
+                <!-- hindi section contents -->
+                <div class="language-content">
+                    <!-- 1st -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/e/e4/Skin_The_Remixes_by_Flume.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 2nd -->
+                    <div>
+                        <img
+                src="https://cdns-images.dzcdn.net/images/cover/14446efffc27e2575b914c88cdbb35e5/264x264.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 3rd -->
+                    <div>
+                        <img
+                src="https://c.saavncdn.com/118/Worry-Bout-Us-English-2015-500x500.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 4th -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 5th -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/e/e4/Skin_The_Remixes_by_Flume.jpg"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+
+                    <!-- 6th -->
+                    <div>
+                        <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                alt="Onism"
+              />
+                        <p>
+                            Onism
+                        </p>
+                        <p>
+                          AUG 11, 2017
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- one aside section is complete -->
+
+        <!-- second aside section will start from here -->
+        <!-- page is set to be responsive so there will be more button which appears while the page indent is decreased-->
+        <!-- As you can see the Aside section 2 is visible -->
+        <!-- this is the label for that more button -->
+
+        <label for="more">
+        <i class="fas fa-angle-double-left"></i>
+        More
+      </label>
+
+        <!-- and this is the check box. this will always be hidden -->
+        <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+        <!-- which will invoke the aside section 2 on lower resolutions -->
+        <input type="checkbox" id="more" />
+
+        <!-- section 2 of our page -->
+        <aside class="aside section-2">
+            <!-- section heading part -->
+            <div class="heading">
+                <h1>
+                    Queue
+                </h1>
+
+                <h4>
+                    <a href="#queue-option-box">
+                        Queue
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </h4>
+            </div>
+
+            <!-- queue box which will be shown when the user clicks on the Queue button -->
+            <!-- User finds 2 options they are playlists and favourite songs -->
+
+            <div class="queue-options" id="queue-option-box">
+                <h5>
+                    <a href style="color: black; ">
+                        Playlists
+                    </a>
+                  </h5>
+
+                <hr>
+
+                <h5>
+                    <a href style="color: black; ">
+                        Favourite Songs
+                    </a>
+                  </h5>
+
+                <hr>
+
+                <h5>                        
+                  <a href="#" style="color: red;">
+                    Close                  
+                  </a>              
+                </h5>
+            </div>
+
+            <!-- this is the content of the playlist. it will be dynamic. -->
+            <div class="playlist-content">
+                <!-- 1st playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <!-- index -->
+                        <div class="num" style="margin-right: 4px;">
+                            01
+                        </div>
+
+                        <div class="coverer">
+                            <!-- coverer class is for those items which when hovered will show an effect -->
+                            <!-- in this effect, when the user hovers on the item, it will show black background -->
+                            <!-- with opacity value less than 1 and a play button icon at the center -->
+                            <img
+                  src="https://cdns-images.dzcdn.net/images/cover/14446efffc27e2575b914c88cdbb35e5/264x264.jpg"
+                  alt="Mirage"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+
+                        <!-- name and author -->
+                        <div>
+                            <div>Mirage</div>
+                            <p>Else</p>
+                        </div>
+                    </div>
+
+                    <!-- like button -->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 2nd playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            02
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://c.saavncdn.com/118/Worry-Bout-Us-English-2015-500x500.jpg"
+                  alt="Worry Bout Us"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Worry Bout Us</div>
+                            <p>Rosie Lowe</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 3rd playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            03
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                  alt="New Skin"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>New Skin</div>
+                            <p>Flume</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 4th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            04
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://i.scdn.co/image/ab67616d00001e0206d191f9a4ec3206b386720c"
+                  alt="Worry Bout Us"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Worry Bout Us</div>
+                            <p>Rosie Lowe</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 5th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            05
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                  alt="New Skin"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>New Skin</div>
+                            <p>Flume</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 6th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            06
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/en/e/e4/Skin_The_Remixes_by_Flume.jpg"
+                  alt="Mirage"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Mirage</div>
+                            <p>Else</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 7th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            07
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://cdns-images.dzcdn.net/images/cover/14446efffc27e2575b914c88cdbb35e5/264x264.jpg"
+                  alt="Mirage"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Mirage</div>
+                            <p>Else</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 8th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            08
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://c.saavncdn.com/118/Worry-Bout-Us-English-2015-500x500.jpg"
+                  alt="Worry Bout Us"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Worry Bout Us</div>
+                            <p>Rosie Lowe</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 9th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            09
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                  alt="New Skin"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>New Skin</div>
+                            <p>Flume</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 10th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            10
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://i.scdn.co/image/ab67616d00001e0206d191f9a4ec3206b386720c"
+                  alt="Worry Bout Us"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Worry Bout Us</div>
+                            <p>Rosie Lowe</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 11th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            11
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/en/3/35/Flume_-_Skin.png"
+                  alt="New Skin"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>New Skin</div>
+                            <p>Flume</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- 12th playlist item -->
+                <div class="playlist-item">
+                    <div class="left-content">
+                        <div class="num" style="margin-right: 4px;">
+                            12
+                        </div>
+
+                        <div class="coverer">
+                            <img
+                  src="https://upload.wikimedia.org/wikipedia/en/e/e4/Skin_The_Remixes_by_Flume.jpg"
+                  alt="Mirage"
+                />
+
+                            <div class="play-button">
+                                <i class="fas fa-play" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>Mirage</div>
+                            <p>Else</p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!-- main part section is over. -->
+
+    <!-- Footer part -->
+    <!-- its position will be fixed to the screen bottom. --> 
+     <footer>
+          <div class="active-song-description">
+           <!-- song image -->
+           <div id="song-image">
+            <img
+             src="https://m.media-amazon.com/images/I/61BxpmUtuYL._UF1000,1000_QL80_.jpg"
+                 alt="Onism"
+             />
+           </div>
+           <!-- song name and author -->
+        <div class="song-desc">
+                <div>
+                    <marquee scrollamount="4" direction="left">
+                  Onism by John Lennon </marquee>
+                </div>
+                <div>
+                  John Lennon
+                </div>
+              </div>
+              <!-- heart icon and ban icon -->
+              <div class="heart-and-ban-icon">
+                <span>
+                  <i class="far fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fas fa-ban"></i>
+                </span>
+              </div>
+            </div>
+      
+            <!-- main player controls -->
+            <div class="player">
+              <div class="controls">
+                <div><i class="fa-solid fa-shuffle"></i></div>
+                <div><i class="fa-sharp fa-solid fa-backward-step"></i></div>
+                <div><i class="fa-sharp fa-solid fa-pause"></i></div>
+                <div><i class="fa-sharp fa-solid fa-forward-step"></i></div>
+                <div><i class="fa-solid fa-repeat"></i></div>
+              </div>
+              <!-- this is the slider -->
+              <div id="slider">
+                <!-- running time -->
+                <div class="time">
+                  1:39
+                </div>
+                <div class="slidecontainer">
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    class="slider"
+                    id="myRange"
+                  />
+                </div>
+      
+                <!-- total time -->
+                <div class="time">
+                  4:44
+                </div>
+              </div>
+            </div>
+      
+            <!-- other icons including the volume slider and all -->
+            <div class="extras">
+              <div>
+                <i class="fa-sharp fa-solid fa-list-ul"></i>
+              </div>
+              <div>
+                <i class="fa-solid fa-computer"></i>
+              </div>
+              <div>
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <div class="slidecontainer" style="width: 30%;">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  class="slider"
+                  id="myRange"
+                  style="margin-top: 0px;"
+                />
+              </div>
+              <div>
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </div>
+            </div>
+          </footer>
+            </body>
+          
+            <script src="script.js"></script>
+
+</html>
